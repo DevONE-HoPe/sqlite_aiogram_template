@@ -13,10 +13,7 @@ router = Router(name="start")
 async def start_handler(message: types.Message) -> None:
     """Welcome message."""
     start = (
-        "<b>🎥 Не знаешь, что посмотреть на YouTube?</b>\n\n"
-        "Просто выбери тему — я сгенерирую интересный поисковый запрос "
-        "и сразу покажу тебе 5 подходящих видео.\n\n"
-        "<b>👇 Выбери тему:</b>"
+        "<b>Привет</b>\n\n"
     )
     
     await message.answer(text=start, reply_markup=create_categories_keyboard())
